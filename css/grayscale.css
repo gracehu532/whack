@@ -9,15 +9,15 @@ body {
     height: 100%;
     font:Lato;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #00a18b;
+    color: #062946; 
     background-color: #eeeeee;
+    font-weight: 50;
 }
 
 html {
     width: 100%;
     height: 100%;
 }
-
 
 
 h1,
@@ -28,10 +28,10 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-weight: 800;
+   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
-        color: #00a18b;
+        color: #062946;
     text-align: center;
 }
 
@@ -39,6 +39,7 @@ p {
     margin: 0 0 5px;
     font-size: 18px;
     /*line-height: 1.5;*/
+    font-weight: 100px;
 }
 
 @media(min-width:767px) {
