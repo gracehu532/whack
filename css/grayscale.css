@@ -9,7 +9,7 @@ body {
     height: 100%;
     font:Lato;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #062946; 
+    color: #424242; 
     background-color: #eeeeee;
     font-weight: 50;
 }
@@ -19,19 +19,13 @@ html {
     height: 100%;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-        color: #062946;
+    color: #242424;
     text-align: center;
 }
 
@@ -100,13 +94,12 @@ a:focus {
 
 .navbar-custom a {
     /*color: #fff; */
-    color: #000;
+    color: #d4d4d4; /* light gray navigation bar text */
 }
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: #eb7100; /*orange*/  
-  /*  background-color: rgba(255,255,255,.3);*/
+    background-color: #808080; /* gray */  
 }
 
 .navbar-custom .nav li a {
@@ -119,7 +112,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: #eb7100;
+    background-color: #66ede2; /* turquoise */ 
  /*   background-color: rgba(255,255,255,.3);*/
 }
 
@@ -148,7 +141,7 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 100px;
     text-align: center;
     color: white;
     background: url(../img/lily.jpg) no-repeat bottom center scroll;
@@ -193,14 +186,14 @@ a:focus {
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #000;
+    width: 55px;
+    height: 55px;
+    margin-top: 20px;
+    padding: 3px 7px;
+    border: 2px solid #b5b5b5;
     border-radius: 35px;
     font-size: 40px;
-    color: #000;
+    color: #b5b5b5;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -210,7 +203,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #000;
+    color: #424242;
     background: rgba(255,255,255,.1);
 }
 
@@ -274,7 +267,12 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #FFF;
-    background: url(../img/hackers_bw.jpg) no-repeat center center scroll;
+    background: 
+    	linear-gradient(
+      		rgba(40, 100, 80, 0.4), 
+      		rgba(60, 160, 235, 0.6)
+    	),
+    	url(../img/hackers_bw.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -285,7 +283,12 @@ a:focus {
 .color_photo {
     width: 100%;
     height: 100%;
-    background: url(../img/da_founders.jpg) no-repeat center center scroll;
+    background: 
+    	linear-gradient(
+      		rgba(40, 100, 80, 0.4), 
+      		rgba(60, 160, 235, 0.6)
+    	),
+    	url(../img/da_founders.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -313,7 +316,12 @@ table td{
     height: 100%;
     padding: 80px 0;
     color: #FFF;
-    background: url(../img/mentorsponsor.jpg) no-repeat center center scroll;
+    background: 
+    	linear-gradient(
+      		rgba(40, 100, 80, 0.4), 
+      		rgba(60, 160, 235, 0.6)
+    	),
+    	url(../img/mentorsponsor.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -324,7 +332,12 @@ table td{
 .color_photo2 {
     width: 100%;
     height: 100%;
-    background: url(../img/collaborating_rgb.jpg) no-repeat center center scroll;
+    background: 
+    linear-gradient(
+      	rgba(50, 50, 50, 0.8), 
+      	rgba(2, 25, 35, 0.92)
+    ),
+    url(../img/collaborating_rgb.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -384,9 +397,9 @@ table td{
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid white;
     outline: 0;
-    color: #000;
+    color: white;
     background-color: #219ab3;
 }
 
@@ -413,7 +426,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 30px;
 }
 
 footer p {
@@ -442,4 +455,36 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.faq-row {
+    width: 50%;
+    float: left;
+    min-width: 300px;
+    padding: 0px 10px;
+}
+
+.faq-card {
+    font-family: "Proxima Nova","Open Sans",sans-serif;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 4px;
+    color: #3E3E3E;
+    padding: 40px 30px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
 }
