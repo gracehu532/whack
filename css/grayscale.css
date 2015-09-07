@@ -36,6 +36,11 @@ p {
     font-weight: 100px;
 }
 
+#logo {
+    margin-top:20px; 
+    width:32%
+}
+
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
@@ -137,11 +142,29 @@ a:focus {
     }
 }
 
+.title-text {
+    font-size:1.7em;
+    /*display: block;*/
+    margin-top: -40px;
+
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#register-links {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+
 .intro {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px;
+    /*padding: 100px 0 100px 0;*/
+    padding: 100px 0 100px 0;
     text-align: center;
     color: white;
     background: 
@@ -156,35 +179,39 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
+.intro-text {
+    font-size:18px; 
+    margin-top:0px; 
+    color:white;
+    line-height: 20px;
+}
+
+.intro-body {
+    line-height: 60px;
+}
 
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-text {
-    color: #000;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
+.intro .intro-body {
     font-size: 18px;
 }
 
 @media(min-width:767px) {
     .intro {
         height: 100%;
-        padding: 0;
+        /*padding: 100px 0 100px 0;*/
+        /*padding: 0px;*/
+        /*padding: 0;*/
     }
 
     .intro .intro-body .brand-heading {
         font-size: 60px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro .intro-body {
         font-size: 25px;
     }
 }
