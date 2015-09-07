@@ -38,10 +38,22 @@ p {
 
 #logo {
     margin-top:20px; 
-    width:32%
+    width:65%
+}
+
+@media(min-width:480px) {
+    #logo {
+        width: 45%;
+    }
 }
 
 @media(min-width:767px) {
+
+    #logo {
+        margin-top:20px; 
+        width:32%
+    }
+
     p {
         margin: 0 0 35px;
         font-size: 20px;
