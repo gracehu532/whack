@@ -372,6 +372,12 @@ table td{
     background-size: cover;
 }
 
+
+.sponsor-logos {
+    max-height: 100%;
+    margin: 10px 20px;
+}
+
 .sponsor-section {
     width: 100%;
   /*  padding: 50px 0;*/
