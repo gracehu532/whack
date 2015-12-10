@@ -415,6 +415,10 @@ table td{
     -o-background-size: cover;
 }
 
+#sponsors {
+    display: none;
+}
+
 #map {
     width: 100%;
     height: 200px;
