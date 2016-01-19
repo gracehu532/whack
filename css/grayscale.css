@@ -84,7 +84,7 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px #FDE272;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff;
@@ -129,7 +129,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: #66ede2; /* turquoise */ 
+    background-color: #FCD231; /* golden */ 
  /*   background-color: rgba(255,255,255,.3);*/
 }
 
@@ -191,12 +191,17 @@ a:focus {
     padding: 100px 0 100px 0;
     text-align: center;
     color: white;
-    background: 
+    /*background: 
     linear-gradient(
         rgba(50, 50, 50, 0.8), 
         rgba(2, 25, 35, 0.92)
+    ),*/
+    background:
+    linear-gradient(
+        rgba(25, 50, 50, 0.0), 
+        rgba(2, 25, 35, 0.92)
     ),
-    url(../img/collaborating_rgb.jpg) no-repeat center center scroll;
+    url(../img/camp_whack_splash.png) no-repeat center center scroll;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -206,7 +211,8 @@ a:focus {
 .intro-text {
     font-size:18px; 
     margin-top:0px; 
-    color:white;
+    color:#FDE272;
+    /*color: #FE834F;*/
     line-height: 20px;
 }
 
@@ -357,7 +363,7 @@ table {
     margin-top: 2em; 
     margin-bottom: 2em; 
     width: 50%; 
-    color: #00a18b; }
+    color: #004382; }
 
 table th{
     font-size: 17pt;
@@ -456,8 +462,10 @@ table td{
 }
 
 .btn-eventbrite {
-    border: 1px solid #00a4b6;
-    color: #00a4b6;
+    /*border: 1px solid #FDE272;*/
+    /*color: #FDE272;*/
+    border: 1px solid white;
+    color: white;
     background-color: transparent;
 }
 
@@ -466,7 +474,7 @@ table td{
     border: 1px solid white;
     outline: 0;
     color: white;
-    background-color: #219ab3;
+    background-color: #FDE272;
 }
 
 ul.banner-social-buttons {
