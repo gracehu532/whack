@@ -1,3 +1,93 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Wellesley College Mail with screen readers
+Tiffany
+Search
+
+
+
+Mail
+COMPOSE
+Labels
+Inbox (4)
+Starred
+Important
+Sent Mail
+Drafts (12)
+Circles
+1 - WHACK
+ASU
+C-Lab - UROP
+CS Club
+HW
+Job Search
+Later
+Notes
+Reference
+Subs
+Receipts
+Summer UROP 2014
+To Apply
+To Buy
+To Do
+To Read
+WCW
+Technical
+Wellesley
+More 
+Hangouts
+
+ 
+ 
+ 
+  More 
+6 of 142  
+ 
+Print all In new window
+updated grayscale.css
+Inbox
+x 
+
+Katy Ma
+Attachments12:00 PM (11 hours ago)
+
+to Jenny, me 
+Hi Jenny and Tiffany,
+
+I made some edits to the website's css:
+gradients over the photos are now gold -> orange
+footer on the bottom is now dark navy instead of gray, to match this season's theme
+when hovering over the menu items, the text is navy and the background is gold
+These are some things I still need to do/figure out/fix, and hope to get to by tomorrow afternoon:
+website
+format the table for the hackathon schedule
+center the logo
+make spam to hang around campus
+Best,
+Katy
+
+Attachments area
+Preview attachment grayscale.css
+
+Style Sheet
+grayscale.css
+    
+Click here to Reply, Reply to all, or Forward
+Using 31.21 GB
+Program Policies
+Powered by Google
+Last account activity: 16 minutes ago
+Details
+More
+Katy Ma's profile photo
+Katy Ma
+Add to circles
+
+Show details
+
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -39,6 +129,7 @@ p {
 #logo {
     margin-top:20px; 
     width:65%
+    
 }
 
 @media(min-width:480px) {
@@ -52,6 +143,7 @@ p {
     #logo {
         margin-top:20px; 
         width:32%
+        
     }
 
     p {
@@ -130,6 +222,7 @@ a:focus {
 .navbar-custom .nav li a.active {
     outline: 0;
     background-color: #FCD231; /* golden */ 
+    color: #004382;
  /*   background-color: rgba(255,255,255,.3);*/
 }
 
@@ -330,11 +423,11 @@ a:focus {
     padding: 100px 0;
     color: #FFF;
     background: 
-    	linear-gradient(
-      		rgba(40, 100, 80, 0.4), 
-      		rgba(60, 160, 235, 0.6)
-    	),
-    	url(../img/hackers_bw.jpg) no-repeat center center scroll;
+        linear-gradient(
+            rgba(253, 226, 114, 0.4), 
+            rgba(250, 151, 137, 0.4)
+        ),
+        url(../img/hackers_bw.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -346,32 +439,37 @@ a:focus {
     width: 100%;
     height: 100%;
     background: 
-    	linear-gradient(
-      		rgba(40, 100, 80, 0.4), 
-      		rgba(60, 160, 235, 0.6)
-    	),
-    	url(../img/da_founders.jpg) no-repeat center center scroll;
+        linear-gradient(
+            rgba(253, 226, 114, 0.4), 
+            rgba(250, 151, 137, 0.4)
+        ),
+        url(../img/da_founders.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .sched {
-    padding: 50px 0;
+    padding: 50px;
 }
 
+/* SCHEDULE TABLE */
+
 table { 
-    margin: auto; 
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 2em; 
-    margin-bottom: 2em; 
-    width: 50%; 
-    color: #004382; }
+    margin-bottom: 4em; 
+    width: 60%; 
+    color: #004382; 
+}
 
 table th{
     font-size: 17pt;
 }
 
 table td{
-    font-size: 13pt;
+    font-size: 12pt;
 }
+
 
 .donate-section {
     width: 100%;
@@ -379,11 +477,11 @@ table td{
     padding: 80px 0;
     color: #FFF;
     background: 
-    	linear-gradient(
-      		rgba(40, 100, 80, 0.4), 
-      		rgba(60, 160, 235, 0.6)
-    	),
-    	url(../img/mentorsponsor.jpg) no-repeat center center scroll;
+        linear-gradient(
+            rgba(253, 226, 114, 0.4), 
+            rgba(250, 151, 137, 0.4)
+        ),
+        url(../img/mentorsponsor.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -396,8 +494,8 @@ table td{
     height: 100%;
     background: 
     linear-gradient(
-      	rgba(50, 50, 50, 0.8), 
-      	rgba(2, 25, 35, 0.92)
+        rgba(253, 226, 114, 0.4), 
+        rgba(250, 151, 137, 0.4)
     ),
     url(../img/collaborating_rgb.jpg) no-repeat center center scroll;
     background-size: cover;
@@ -509,7 +607,7 @@ ul.banner-social-buttons {
 
 footer {
     padding: 30px;
-    background-color: #4d4d4d;
+    background-color: #00253C;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -575,3 +673,5 @@ body {
     line-height: 1.7;
     font-weight: 400;
 }
+grayscale.cssOpen
+Displaying grayscale.css.
