@@ -415,8 +415,12 @@ table td{
 
 
 .sponsor-logos {
-    max-height: 100%;
+    /*max-height: 100%;*/
     margin: 10px 20px;
+    /*max-width: 200px;*/
+    max-width: 80%;
+    max-height:100px;
+    padding: 5px 10px;
 }
 
 .sponsor-section {
@@ -432,7 +436,9 @@ table td{
 }
 
 #sponsors {
-    display: none;
+    /*display: none;*/
+    background-color: #fff;
+    width: 100%;
 }
 
 #map {
@@ -442,7 +448,7 @@ table td{
 }
 
 #partners {
-    background: #fcfcfc;
+    background: #eeeeee;
 }
 
 #partners img {
