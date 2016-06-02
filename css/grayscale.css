@@ -11,8 +11,8 @@ body {
     height: 100%;
     font:Lato;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #424242; 
-    background-color: #eeeeee;
+    color: #F8F8F8; /* very light gray */
+    background-color: #FA8C7D; /* light orange/red color */
     font-weight: 50;
 }
 
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #242424;
+    color: #fff;
     text-align: center;
 }
 
@@ -60,13 +60,13 @@ p {
 
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
 
 a {
-    color: #219ab3;
+    color: #595959;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -75,7 +75,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: #595959; /* dark gray */
 }
 
 .light {
@@ -114,13 +114,13 @@ a:focus {
 }
 
 .navbar-custom a {
-    /*color: #fff; */
-    color: #d4d4d4; /* light gray navigation bar text */
+    color: #6A6A6A;; /* dark gray navigation bar text */
 }
 
+/* the current tab the user is reading */
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: #808080; /* gray */  
+    background-color: #FFF7E3; /* very light gold */  
 }
 
 .navbar-custom .nav li a {
@@ -129,13 +129,16 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
-.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:hover {
+    background-color: transparent; 
+    color: #3B3B3B; /* dark gray */
+}
+
 .navbar-custom .nav li a:focus,
+
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: #FCD231; /* golden */ 
-    color: #004382;
- /*   background-color: rgba(255,255,255,.3);*/
+    background-color: #FFF7E3; /* very light gold */  
 }
 
 @media(min-width:767px) {
@@ -151,18 +154,9 @@ a:focus {
 
     .top-nav-collapse { /*nav bar at top's background color*/
         padding: 0;
-        background-color: #fff;
+        background-color: #FFD466;  /* gold */
     }
-
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
-    }
-
-    /*.title-text {
-        font-size: 1.7em;
-    }*/
 }
-
 
 
 .title-text {
@@ -196,17 +190,13 @@ a:focus {
     padding: 100px 0 100px 0;
     text-align: center;
     color: white;
-    /*background: 
-    linear-gradient(
-        rgba(50, 50, 50, 0.8), 
-        rgba(2, 25, 35, 0.92)
-    ),*/
-    background:
+    background-color: white;
+    /*background:
     linear-gradient(
         rgba(25, 50, 50, 0.0), 
         rgba(2, 25, 35, 0.92)
     ),
-    url(../img/camp_whack_splash.png) no-repeat center center scroll;
+    url(../img/camp_whack_splash.png) no-repeat center center scroll; */
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -214,9 +204,10 @@ a:focus {
     -o-background-size: cover;
 }
 .intro-text {
-    font-size:18px; 
+    font-size:20px; 
     margin-top:0px; 
-    color:#FDE272;
+    margin-bottom:10px;
+    color:#FA8C7D; /* light peach color */
     /*color: #FE834F;*/
     line-height: 20px;
 }
@@ -257,17 +248,20 @@ a:focus {
     height: 55px;
     margin-top: 20px;
     padding: 3px 7px;
-    border: 2px solid #b5b5b5;
-    border-radius: 35px;
+    /*border: 2px solid #b5b5b5;
+    border-radius: 35px;*/
     font-size: 40px;
-    color: #b5b5b5;
+    color: #FCAA79; /* light orange color */
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
-.btn-circle:hover,
+.btn-circle:hover {
+    color: #FCAA79; /* light orange color */
+}
+
 .btn-circle:focus {
     outline: 0;
     color: #424242;
@@ -326,21 +320,24 @@ a:focus {
     }
 }
 
+/* FAQ */
 .content-section {
-    padding-top: 100px;
+    padding: 100px 0 40px 0;
 }
+
+
 
 .download-section {
     width: 100%;
     padding: 100px 0;
-    color: #FFF;
-    background: 
+    color: #595959; /* dark gray */
+    /* background: 
         linear-gradient(
             rgba(253, 226, 114, 0.4), 
             rgba(250, 151, 137, 0.4)
         ),
-        url(../img/hackers_bw.jpg) no-repeat center center scroll;
-    background-color: #000;
+        url(../img/wearable.jpg) no-repeat center center scroll; */
+    background-color: #F3F3F5; /* light gray */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -355,12 +352,12 @@ a:focus {
             rgba(253, 226, 114, 0.4), 
             rgba(250, 151, 137, 0.4)
         ),
-        url(../img/da_founders.jpg) no-repeat center center scroll;
+        url(../img/two_hackers.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .sched {
-    padding: 50px;
+    padding: 10px;
 }
 
 /* SCHEDULE TABLE */
@@ -368,18 +365,20 @@ a:focus {
 table { 
     margin-right: auto;
     margin-left: auto;
-    margin-top: 2em; 
-    margin-bottom: 4em; 
-    width: 60%; 
-    color: #004382; 
+   /* margin-top: 1em; */
+    margin-bottom: 6em; 
+    width: 55%; 
+    color: #F8F8F8; /* very light gray */
 }
 
-table th{
-    font-size: 17pt;
+table th {
+    font-size: 20pt;
+    padding: 0 0 15px 0;
 }
 
-table td{
+table td {
     font-size: 12pt;
+    padding: 0 0 5px 0;
 }
 
 
@@ -409,7 +408,7 @@ table td{
         rgba(253, 226, 114, 0.4), 
         rgba(250, 151, 137, 0.4)
     ),
-    url(../img/collaborating_rgb.jpg) no-repeat center center scroll;
+    url(../img/wearable.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -427,7 +426,7 @@ table td{
     width: 100%;
   /*  padding: 50px 0;*/
     color: #FFF;
-    background: url(../img/mentorsponsor.jpg) center;
+    background: url(../img/mentors.jpg) center;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -488,17 +487,25 @@ table td{
 .btn-eventbrite {
     /*border: 1px solid #FDE272;*/
     /*color: #FDE272;*/
-    border: 1px solid white;
-    color: white;
+    border: 2px solid #FA8C7D; /* light peach color */
+    color: #FA8C7D;
+    padding-top: 10px;
     background-color: transparent;
 }
+
+.btn-eventbrite:hover {
+    color: #fff; 
+    background-color: #FF7663; /* dark peach color */
+    border-color: #FF7663;;
+}
+
 
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid white;
     outline: 0;
     color: white;
-    background-color: #FDE272;
+    background-color: #FDE272; /* light yellow color */
 }
 
 ul.banner-social-buttons {
@@ -525,7 +532,7 @@ ul.banner-social-buttons {
 
 footer {
     padding: 30px;
-    background-color: #00253C;
+    /* background-color: #FF7764; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -559,6 +566,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
 
 .faq-row {
     width: 50%;
