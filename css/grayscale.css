@@ -599,3 +599,8 @@ body {
     line-height: 1.7;
     font-weight: 400;
 }
+
+/* disable images from being dragged */
+img {
+    pointer-events:none;
+}
