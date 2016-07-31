@@ -190,13 +190,18 @@ a:focus {
     padding: 100px 0 100px 0;
     text-align: center;
     color: white;
-    background-color: white;
+
+
     /*background:
     linear-gradient(
         rgba(25, 50, 50, 0.0), 
         rgba(2, 25, 35, 0.92)
     ),
     url(../img/camp_whack_splash.png) no-repeat center center scroll; */
+
+
+    background:
+    -webkit-linear-gradient(left top, #FFFBF4, #FFEFD3);
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -323,18 +328,10 @@ a:focus {
     padding: 100px 0 40px 0;
 }
 
-
-
 .download-section {
     width: 100%;
     padding: 100px 0;
     color: #595959; /* dark gray */
-    /* background: 
-        linear-gradient(
-            rgba(253, 226, 114, 0.4), 
-            rgba(250, 151, 137, 0.4)
-        ),
-        url(../img/wearable.jpg) no-repeat center center scroll; */
     background-color: #F3F3F5; /* light gray */
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -370,6 +367,7 @@ table {
 }
 
 table th {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20pt;
     padding: 0 0 15px 0;
 }
@@ -476,24 +474,38 @@ table td {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
-    border: 1px solid #219ab3;
-    color: #219ab3;
-    background-color: transparent;
-}
-
-.btn-eventbrite {
+.btn-register {
     color: #fff;
     padding-top: 10px;
     background-color: #FF8776; /* light peach */
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.btn-eventbrite:hover {
+.btn-register:hover {
     color: #fff; 
     background-color: #F66E5B; /* dark peach */
 }
 
 
+/* styling of sponsor, mentor, and partner buttons */
+.btn-eventbrite {
+    color: #fff;
+    padding-top: 10px;
+    background-color: transparent;
+    border: 2px solid #FF8776;
+}
+
+.btn-eventbrite:hover {
+    color: #fff; 
+    background-color: #FF8776; /* light peach */
+}
+
+.btn-default {
+    border: 1px solid #219ab3;
+    color: #219ab3;
+    background-color: transparent;
+}
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid white;
@@ -572,7 +584,7 @@ body {
 .faq-card {
     font-family: "Proxima Nova","Open Sans",sans-serif;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #FFFBF4; /* light yellow */
     border-radius: 4px;
     color: #3E3E3E;
     padding: 40px 30px;
@@ -592,6 +604,11 @@ body {
     font-size: 14px;
     line-height: 1.7;
     font-weight: 400;
+}
+
+.date-emphasis {
+    background-color: #FBB2A9; /* light peach */
+    padding: 5px 10px 5px 10px;
 }
 
 /* disable images from being dragged */
