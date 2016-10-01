@@ -1,152 +1,468 @@
+<!-- WHACK Fall 2016 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="WHACK - Wellesley College's Hackathon on October 1-2">
+	<meta name="author" content="">
+	<meta name="google-site-verification" content="vrm1lqL44SQU6z3r_IoQezLk7YZ3sCJq7ff9fo_S4L0" />
 
-    <title>WHACK 2015 - Oct 9, 2015</title>
+	<title>WHACK</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/grayscale.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
-</head>
+	<!-- Icons -->
+	<link rel="icon" type="image/png" href="img/fav.png">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">WHACK</span> Fall 2015</a>
-            </div>
+    </head>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#join">Join Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#schedule">Schedule</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#Sponsorship">Sponsorship</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <h1 class="brand-heading"><img src="img/katylogo.jpg" alt="WHACK" id="logo" style="margin-bottom: -50px;width:40%"></h1>
-                        <p style="font-size:50px;display: inline;color: #9BCFFF;">Wellesley</p> <p style="font-size:50px;display: inline; color: #85FEF7"><b>HACKATHON</b></p>
-                        <p class="intro-text">October 9, 2015<br>Wellesley College</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.png" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-            </div>
-        </div>
-    </section>
+    	<!-- Navigation -->
+    	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+    					<i class="fa fa-bars"></i>
+    				</button>
+    				<a class="navbar-brand page-scroll" href="#page-top">
+    					<span class="light">WHACK
+    				</a>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
+    			</div>
+
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+    				<ul class="nav navbar-nav">
+    					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+    					<li class="hidden">
+    						<a href="#page-top"></a>
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#about">About</a>
+    					</li>
+
+    					<li>
+    						<a class="page-scroll" href="#schedule">Schedule</a>
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#faq">FAQ</a>
+
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#sponsors">Sponsors</a>
+    					</li>
+                        <li>
+                            <a class="page-scroll" href="#contribute">Support</a>
+                        </li>
+
+    				</ul>
+    			</div>
+    			<!-- /.navbar-collapse -->
+    		</div>
+    		<!-- /.container -->
+    	</nav>
+
+    	<!-- Intro Header -->
+    	<header class="intro">
+    		<div class="intro-body">
+    			<div class="container">
+    				<div><img src="img/whacklogo_notext.png" alt="WHACK" id="logo" style="width: 35%"></div>
+    				<div class="intro-text"><font size="7" style="line-height: 1.2em">HACK FOR SOCIAL GOOD</font> <br><br>October 1-2, 2016 | Wellesley College <br><br>
+    				</div>
+    				<div class="register-links">
+
+    				<a href="http://goo.gl/forms/oPtlMaqfxFnbeyty2" class="btn-register btn-lg">Register</a>
+    				<a href="https://docs.google.com/document/d/18c_pEq7WqegyTmP2Yd0hwqcnpJThymPz6Jfd2SeJQjo/edit?usp=sharing" class="btn-register btn-lg">Information</a>
+
+							<div><a style="margin-bottom: -20px"href="#about" class="btn btn-circle page-scroll">
+    						<i class="fa fa-angle-double-down animated"></i>
+    					</a></div>
+							
+    				</div>
+    			</div>
+
+    		</div>
+    	</header>
+
+    	<!-- ABOUT -->
+    	<section id="about" class="container content-section text-center">
+
+            <div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>ABOUT WHACK</h2>
+
+    				<p>WHACK is all about supporting women in tech. Spend a weekend with us and dozens of undergraduate students from throughout the New England area and build something amazing. At WHACK, we want you to think out of the box, experiment with new technologies, ask questions, make mistakes, learn something new, and have fun! We believe that good mentorship and teamwork are essential, so your team will be given a professional mentor who will guide and support you. Whether you’re a seasoned developer or designer, or just starting out as a beginner, WHACK has something to offer you. <br><br>
+
+                    <img src="img/education.png" alt="education" width="8%" align="middle">
+                    <img src="img/health.png" alt="health" width="8%" align="middle" style="margin-left:6%">
+                    <img src="img/accessibility.png" alt="accessibility" width="8%" align="middle" style="margin-left:6%"> <br><br>
+
+                    This year our theme is hacking for social good. We are partnering with non-profits to develop technological solutions to their biggest challenges.  Our three main tracks are Education, Health, and Accessibility. Join us for one impactful weekend!</p>
+
+                    <br><br>
+
+    			</div>
+    		</div>
+
+    	</section> <!-- end of ABOUT section -->
+
+    	<section class = "color_photo" id = "full photo 1"></section>
+
+        <!-- Fall 2016 Info & Schedule section -->
+        <section id="schedule" class="sched container content-section text-center">
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <!-- <h2>Fall 2016</h2>
+                    <p> WHACK is a hackathon all about support. From within, we are supporting women in tech, and pairing every team of students with an enthusiastic mentor. But this year, we’re also supporting the greater community, with a hacking for social good theme. You in? <br><br></p> -->
                 </div>
             </div>
-        </div>
+
+    	<!-- SCHEDULE-->
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+	    			<h2>Schedule</h2>
+    			</div>
+    		</div>
+    	</section>
+
+
+        <table id="table-saturday">
+		<thead>
+			<tr>
+                <th><span class="date-emphasis">Saturday, 10/1 </span></th>
+            </tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Check-in</td>
+                <td>9:00am-10:00am</td>
+				<td>Tishman Commons, LWC</td>
+			</tr>
+			<tr>
+				<td>Opening Keynote Ceremony</td>
+                <td>10:00am-10:45am</td>
+				<td>Tishman Commons, LWC</td>
+			</tr>
+			<tr>
+
+				<td>Hacking Begins</td>
+                <td>10:45am</td>
+				<td>Tishman Commons, LWC</td>
+			</tr>
+            <tr>
+                <td>HPE Vertica Analytics Workshop</td>
+		<td>11:00pm-12:00pm</td>
+                <td>Room 210, LWC</td>
+            </tr>
+	   <tr>
+                <td>Twitter Real-time App Workshop </td>
+                <td>12:00pm-1:00pm</td>
+                <td>Room 415, LWC</td>
+            </tr>
+			<tr>
+				<td>Lunch</td>
+                <td>1:00pm-2:00pm</td>
+				<td>Cow Chair Room, LWC</td>
+			</tr>
+            <tr>
+                <td>JavaScript Workshop</td>
+                <td>2:00pm-3:00pm</td>
+                <td>Room 415, LWC</td>
+            </tr>
+            <tr>
+                <td>Rest API Workshop </td>
+                <td>3:30pm-4:30pm</td>
+                <td>Room 415, LWC</td>
+            </tr>
+			<tr>
+				<td>UX Design Workshop </td>
+                <td>5:00pm-6:00pm</td>
+				<td>Room 415, LWC</td>
+			</tr>
+            <tr>
+                <td>Dinner</td>
+                <td>6:00pm-7:00pm</td>
+                <td>Cow Chair Room, LWC</td>
+            </tr>
+            <tr>
+                <td>Games</td>
+                <td>9:00pm-10:30pm</td>
+                <td>Tishman, LWC</td>
+            </tr>
+			<tr>
+				<td>Midnight Snack</td>
+                <td>12:00am-1:00am</td>
+				<td>Cow Chair Room, LWC</td>
+			</tr>
+        </tbody>
+        </table>
+
+
+        <table id="table-sunday">
+        <thead>
+            <tr>
+                <th><span class="date-emphasis">Sunday, 10/2</span></th>
+            </tr>
+			<tr>
+
+				<td>Breakfast</td>
+                <td>8:00am-9:30am</td>
+				<td>Cow Chair Room, LWC</td>
+			</tr>
+
+            <tr>
+                <td>Yoga</td>
+                <td>10:00am-10:30am</td>
+                <td>Cow Chair Room, LWC</td>
+            </tr>
+
+			<tr>
+
+				<td>Hacking Ends</td>
+                <td>11:30am</td>
+				<td>Tishman Commons, LWC</td>
+			</tr>
+			<tr>
+				<td>Lunch & Presentations</td>
+                <td>12:00pm-2:00pm</td>
+				<td>Tishman Commons, LWC</td>
+			</tr>
+			<tr>
+				<td>Closing Awards Ceremony</td>
+                <td>2:00pm-3:00pm</td>
+				<td>Tishman Commons, LWC</td>
+			</tr>
+            <tr>
+                <td>End</td>
+                <td>3:00pm</td>
+                <td>Go home!</td>
+            </tr>
+
+		</tbody>
+	</table>
+
+</section> <!-- /schedule -->
+
+
+
+    <section class = "color_photo2" id = "full photo 2"></section>
+
+    <!-- 'Contact Us' Section -->
+    <section id="faq" class="container content-section text-center">
+    	<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+    			<h2>FAQ</h2>
+    			<ul class="list-inline banner-social-buttons">
+
+    	 	<div class="faq-row">
+    	 		<div class="faq-card">
+                    <div class="card-title">What is a hackathon?</div>
+                    <div class="card-body">It’s a grand gathering of people to make their ideas come to life. Think out of the box, try new technologies, ask questions, make mistakes, discover a new language, and have fun! We will be following Major League Hacking's <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" style="color: #CC0000">Code of Conduct.</a></div>
+    			</div>
+
+    			<div class="faq-card">
+                    <div class="card-title">What if I have ZERO experience?</div>
+                    <div class="card-body">That’s absolutely fine! We encourage beginners to join us. Get psyched to learn a ton from our mentors and have a blast with your teammates!</div>
+    			</div>
+
+    			<div class="faq-card">
+                    <div class="card-title">Is this event only for women?</div>
+                    <div class="card-body">This event is geared towards women, but we welcome all. Keep in mind that we are looking to create a safe space. If you have any questions about this, please contact us!</div>
+    			</div>
+
+                <div class="faq-card">
+                    <div class="card-title">How does mentorship at WHACK work?</div>
+                    <div class="card-body">We believe that good mentorship and teamwork are essential. Each team of 3-5 undergraduate students is paired with a professional mentor who will provide guidance for the entire weekend.</div>
+                </div>
+
+    			<div class="faq-card">
+                    <div class="card-title">Can I hack with my friends?</div>
+                    <div class="card-body">Our aim is to strengthen the network of women in CS, and we hope to achieve this by creating random teams where each team will have an experienced mentor. If you MUST hack with a friend, please stipulate so in the registration form, and we'll do our best to accommodate!</div>
+    			</div>
+			</div>
+
+			<div class="faq-row">
+
+    				<div class="faq-card">
+                        <div class="card-title">Why social good?</div>
+                        <div class="card-body"> At WHACK, we believe in the power of technology to change the world for the better. We want to cultivate a community that is passionate about social change, and builds projects with a meaningful social impact in mind.</div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="card-title">How will you decide who is able to attend?</div>
+                        <div class="card-body">Applicants will be chosen based on a weighted random lottery. Everyone is welcome and encouraged to apply and attend!</div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="card-title">Will travel costs be reimbursed?</div>
+                        <div class="card-body">Unfortunately, we currently cannot provide reimbursements for travel costs. However, all food and housing will be provided during WHACK.</div>
+                    </div>
+
+                    <div class="faq-card">
+                    	<div class="card-title">Do I need to have a finished project by the end?</div>
+                    	<div class="card-body">Ideally you'd have a finished/close-to-finished project by Sunday. If you don't finish, not a bad thing! We won't catapult you to Pluto. Ultimately, this is a learning experience, and we want this to be fun for everyone!</div>
+    				</div>
+
+    				<div class="faq-card">
+                    	<div class="card-title">What if I can only come for part of the weekend?</div>
+                    	<div class="card-body">Due to the large volume of applicants WHACK receives, we give priority to applicants who can commit their entire weekend. If you have a conflict, please stipulate it on your registration form, and we will do our best to accommodate special circumstances.</div>
+    				</div>
+
+    				<div class="faq-card">
+                    	<div class="card-title">Have other questions?</div>
+                    	<div class="card-body">Send us an email at <a href="mailto:hack@wellesley.edu" style="color:#FF7663">hack@wellesley.edu</a>, tweet at us <a href="https://twitter.com/wellesleyhack" style="color:#FF7663">@wellesleyhack</a>, or reach out on <a href="https://www.facebook.com/wellesleyhack" style="color:#FF7663">Facebook</a>! </div>
+    				</div>
+    		</div>
+    </div>
+</div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
+    <!--Sponsors section -->
+    <section id="sponsors" class="container content-section text-center">
+
+        <!-- gold sponsors section-->
+        <div class="row" style="padding-bottom:5%;">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                    <h2 style="color:#595959">Gold Sponsors</h2>
+
+                    <a href="https://www.microsoft.com"><img src="img/sponsor-logos/logo-microsoft.jpg" alt="Microsoft" class="sponsor-logos" width="40%"></a>
+
+                    <a href="https://www.cisco.com"><img src="img/sponsor-logos/cisco.png" alt="Cisco Systems" class="sponsor-logos"></a>
+
+                	<a href="https://www.nytimes.com"><img src="img/sponsor-logos/nytimes.png" alt="NY Times" class="sponsor-logos" width="45%"></a>
+
+                    <a href="https://www.hpe.com"><img src="img/sponsor-logos/hpe.png" alt="HPE" class="sponsor-logos"></a>
+
+
+
+	  	    <a href="https://aws.amazon.com"><img src="img/sponsor-logos/aws.png" alt="Amazon" class="sponsor-logos"></a>
+
+
+                </div>
+        </div>
+
+
+        <!-- silver sponsors section-->
+        <div class="row" style="padding-bottom:5%;">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <h2 style="color:#595959">Silver Sponsors</h2>
+
+                    <a href="https://www.akamai.com"><img src="img/sponsor-logos/akamai.png" alt="Akamai" class="sponsor-logos" style="padding-left:10%"></a>
+
+
+                    <a href="https://www.twitter.com"><img src="img/sponsor-logos/twitter.png" alt="Twitter" class="sponsor-logos" style="padding-right:10%"></a>
+
+                    <a href="https://www.google.com"><img src="img/sponsor-logos/logo-google.jpg" width="30%" alt="Google" class="sponsor-logos" ></a>
+
+					<a href="https://www.redfin.com"><img src="img/sponsor-logos/redfin.png" alt="Redfin" class="sponsor-logos"></a>
+
+                    <a href="https://www.planet.com"><img src="img/sponsor-logos/planet.jpg" alt="Planet" class="sponsor-logos"></a>
+
+					<a href="https://www.onshape.com"><img src="img/sponsor-logos/onshape.png" width="25%" alt="Onshape" class="sponsor-logos"></a>
+
+                </div>
+        </div>
+
+        <!-- bronze sponsors section-->
+        <div class="row" style="padding-bottom:5%;">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <h2 style="color:#595959">Bronze Sponsors</h2>
+
+ 					<a href="http://www.predictivetechnologies.com/"><img src="img/sponsor-logos/apt.jpg" alt="Applied Predictive Technologies" class="sponsor-logos" width="30%" style="padding-right:10%"></a>
+
+					<a href="https://www.hubspot.com"><img src="img/sponsor-logos/hubspot.png" alt="Hubspot" class="sponsor-logos"></a>
+
+					<a href="https://www.assembled.com"><img src="img/sponsor-logos/assembled.png" alt="Assembled" class="sponsor-logos"></a>
+
+                	<a href="https://www.gust.com"><img src="img/sponsor-logos/gust.png" alt="Gust" class="sponsor-logos"></a>
+
+                    <a href="https://www.freshprints.com"><img src="img/sponsor-logos/freshprints.png" alt="Fresh Prints" class="sponsor-logos"></a>
+
+                </div>
+        </div>
+
+        <!-- partners section-->
+        <div class="row" style="padding-bottom:5%;">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <h2 style="color:#595959">Partners</h2>
+                    <a href="http://www.pih.org/"><img src="img/partner-logos/PIH.png" alt="Uplift" class="sponsor-logos"></a>
+                    <a href="http://uplifttogether.org"><img src="img/partner-logos/uplift.jpg" alt="Partners in Health" class="sponsor-logos"></a>
+										<a href="https://mlh.io/"><img src="img/partner-logos/mlh-logo.png" alt="MLH" class="sponsor-logos"></a>
+										<a href="http://www.wellesley.edu/disability"><img src="img/partner-logos/disabilityservices.png" alt="MLH" class="sponsor-logos"></a>
             </div>
         </div>
+
+    </section> <!-- end of sponsors section-->
+
+
+    <!-- Sponsorship/Mentorship Section -->
+    <section id="contribute" class="donate-section container content-section text-center">
+    	<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+
+    				<h1 style="color:white">Support</h1>
+
+    				<p style="color:white">Join our support system for women in tech!</p>
+
+    				<ul class="list-inline banner-social-buttons">
+
+    					<li>
+
+    						<a href="SponsorLetterF16.pdf" class="btn btn-eventbrite btn-lg" style="color:white; border-color:white"><span class="network-name">Sponsor</span></a>
+    						<a href="https://docs.google.com/forms/d/e/1FAIpQLScZ1j2Z728NRP8beX5bTNYiQCJuYoA2Lb5cbwO1ohiqAaFwew/viewform" class="btn btn-eventbrite btn-lg" style="color:white; border-color:white"><span class="network-name">Mentor</span></a>
+                            <a href="PartnerLetterF16.pdf" class="btn btn-eventbrite btn-lg" style="color:white; border-color:white"><span class="network-name">Partner</span></a>
+
+
+                            <!--link to mentor sign up "http://goo.gl/forms/xlj6axGOsQ"-->
+    					</li>
+    					<!-- <li>
+    						<a href="pdfs/MentorLetter.pdf" class="btn btn-eventbrite btn-lg" style="color:white; border-color:white"></i> <span class="network-name">Mentor</span></a>
+
+    					</li> -->
+    				</ul>
+    			</div>
+    		</div>
+
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
 
     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
-        </div>
+    <footer class="content-section text-center">
+    	<div class="social-icons" style = "padding-bottom:30px;">
+						<a target="_blank" title="facebook" href="http://www.facebook.com/pages/WHACK/1667107370201246?fref=ts"><img alt="mail" src="img/social-icons/mail.png" border=0></a>
+
+                        <a target="_blank" title="facebook" href="http://www.facebook.com/pages/WHACK/1667107370201246?fref=ts"><img alt="facebook" src="img/social-icons/facebook.png" border=0></a>
+
+						<a target="_blank" href="http://www.twitter.com/wellesleyhack"><img alt="twitter" src="img/social-icons/twitter.png" border=0></a>
+
+						<a target="_blank" title="instagram" href="http://www.instagram.com/wellesleyhack"><img alt="instagram" src="img/social-icons/instagram.png" border=0></a>
+		</div>
+
+
+    	<div style="color: white;"class="container text-center">
+
+    		Made with love by the Fall 2016 WHACK Committee
+    	</div>
+
+
     </footer>
 
     <!-- jQuery -->

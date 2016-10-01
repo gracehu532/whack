@@ -1,15 +1,11 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    font:Lato;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #F8F8F8; /* very light gray */
+    background-color: #FA8C7D; /* light orange/red color */
+    font-weight: 50;
 }
 
 html {
@@ -17,35 +13,52 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 5px;
     font-size: 18px;
-    line-height: 1.5;
+    /*line-height: 1.5;*/
+    font-weight: 100px;
 }
 
-@media(min-width:768px) {
+#logo {
+    margin-top:20px; 
+    width:65%
+    
+}
+
+@media(min-width:480px) {
+    #logo {
+        width: 45%;
+    }
+}
+
+@media(min-width:767px) {
+
+    #logo {
+        margin-top:20px; 
+        width:32%
+        
+    }
+
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
 
 a {
-    color: #42dca3;
+    color: #595959;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,16 +67,20 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #595959; /* dark gray */
 }
 
 .light {
     font-weight: 400;
 }
 
+.nav {
+    padding-right: 100px;
+}
+
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px #FDE272;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff;
@@ -89,7 +106,13 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #002776;
+    color: #6A6A6A;; /* dark gray navigation bar text */
+}
+
+/* the current tab the user is reading */
+.navbar-custom .nav li.active {
+    outline: nonte;
+    background-color: #FFF7E3; /* very light gold */  
 }
 
 .navbar-custom .nav li a {
@@ -99,31 +122,19 @@ a:focus {
 }
 
 .navbar-custom .nav li a:hover {
-    outline: 0;
-    color: #A0CFEB;
-    background-color: transparent;
+    background-color: transparent; 
+    color: #3B3B3B; /* dark gray */
 }
 
 .navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
+
+.navbar-custom .nav li a.active {
     outline: 0;
-    background-color: transparent;
+    background-color: #FFF7E3; /* very light gold */  
 }
 
-.navbar-custom .nav li.active {
-    outline: 0;
-}
-
-.navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: #fff;
-}
-
-@media(min-width:768px) {
-    .navbar-custom {
+@media(min-width:767px) {
+    .navbar {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
@@ -133,27 +144,73 @@ a:focus {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
-    .navbar-custom.top-nav-collapse {
+    .top-nav-collapse { /*nav bar at top's background color*/
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #fff;
+        background-color: #FFD466;  /* gold */
     }
+}
+
+
+.title-text {
+    font-size:1.5em;
+    /*display: block;*/
+    margin-top: -40px;
+
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media(min-width:767px) {
+    .title-text {
+        font-size: 1.7em;
+    }
+}
+
+#register-links {
+    margin-top: 0px; 
+    margin-bottom: 0px;
 }
 
 .intro {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    /*padding: 100px 0 100px 0;*/
+    padding: 100px 0 100px 0;
     text-align: center;
-    color: #002776;;
-    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #fff;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+
+
+    /*background:
+    linear-gradient(
+        rgba(25, 50, 50, 0.0), 
+        rgba(2, 25, 35, 0.92)
+    ),
+    url(../img/camp_whack_splash.png) no-repeat center center scroll; */
+
+
+    background:
+    -webkit-linear-gradient(left top, #FFFBF4, #FFEFD3);
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+.intro-text {
+    font-size:20px; 
+    margin-top:0px; 
+    margin-bottom:10px;
+    color:#FA8C7D; /* light peach color */
+    /*color: #FE834F;*/
+    line-height: 20px;
+}
+
+.intro-body {
+    line-height: 60px;
 }
 
 .intro .intro-body {
@@ -161,49 +218,48 @@ a:focus {
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-    margin-top: 1em;
-}
-
-.intro .intro-body .intro-text {
+.intro .intro-body {
     font-size: 18px;
 }
 
-@media(min-width:768px) {
+@media(min-width:767px) {
     .intro {
         height: 100%;
-        padding: 0;
+        padding: 50px 0 100px 0;
+        /*padding: 100px 0 100px 0;*/
+        /*padding: 0px;*/
+        /*padding: 0;*/
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 60px;
     }
 
-    .intro .intro-body .intro-text {
-        font-size: 26px;
+    .intro .intro-body {
+        font-size: 25px;
     }
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
+    width: 55px;
+    height: 55px;
+    margin-top: 20px;
+    padding: 3px 7px;
     font-size: 40px;
-    color: #fff;
+    color: #FCAA79; /* light orange color */
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
-.btn-circle:hover,
+.btn-circle:hover {
+    color: #FCAA79; /* light orange color */
+}
+
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #424242;
     background: rgba(255,255,255,.1);
 }
 
@@ -226,7 +282,7 @@ a:focus {
 }
 
 @-webkit-keyframes pulse {
-    0% {
+    0 {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -243,7 +299,7 @@ a:focus {
 }
 
 @-moz-keyframes pulse {
-    0% {
+    0 {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -259,20 +315,115 @@ a:focus {
     }
 }
 
+/* FAQ */
 .content-section {
-    padding-top: 100px;
+    padding: 100px 0 40px 0;
 }
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    padding: 100px 0;
+    color: #595959; /* dark gray */
+    background-color: #F3F3F5; /* light gray */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.color_photo {
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(
+            rgba(253, 226, 114, 0.4), 
+            rgba(250, 151, 137, 0.4)
+        ),
+        url(../img/two_hackers.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.sched {
+    padding: 10px;
+}
+
+/* SCHEDULE TABLE */
+
+table { 
+    margin-right: auto;
+    margin-left: auto;
+   /* margin-top: 1em; */
+    margin-bottom: 6em; 
+    width: 55%; 
+    color: #F8F8F8; /* very light gray */
+}
+
+table th {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20pt;
+    padding: 0 0 15px 0;
+}
+
+table td {
+    font-size: 12pt;
+    padding: 0 0 5px 0;
+}
+
+
+.donate-section {
+    width: 100%;
+    /*height: 100%;*/
+    padding: 80px 0;
+    color: #FFF;
+    background: 
+        linear-gradient(
+            rgba(253, 226, 114, 0.4), 
+            rgba(250, 151, 137, 0.4)
+        ),
+        url(../img/mentorsponsor.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.color_photo2 {
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(
+        rgba(253, 226, 114, 0.4), 
+        rgba(250, 151, 137, 0.4)
+    ),
+    url(../img/wearable.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+
+.sponsor-logos {
+    margin: 10px 20px;
+    max-width: 80%;
+    max-height:100px;
+    padding: 5px 10px;
+}
+
+.sponsor-section {
+    width: 100%;
+  /*  padding: 50px 0;*/
+    color: #FFF;
+    background: url(../img/mentors.jpg) center;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#sponsors {
+    /*display: none;*/
+    background-color: #fff;
+    width: 100%;
 }
 
 #map {
@@ -281,9 +432,17 @@ a:focus {
     margin-top: 100px;
 }
 
+#partners {
+    background: #eeeeee;
+}
+
+#partners img {
+    width: 200px;
+}
+
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -297,7 +456,6 @@ a:focus {
 }
 
 .btn {
-    border-radius: 0;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -306,18 +464,44 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
-    background-color: transparent;
+.btn-register {
+    color: #fff;
+    padding-top: 10px;
+    background-color: #FF8776; /* light peach */
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.btn-register:hover {
+    color: #fff; 
+    background-color: #F66E5B; /* dark peach */
+}
+
+
+/* styling of sponsor, mentor, and partner buttons */
+.btn-eventbrite {
+    color: #fff;
+    padding-top: 10px;
+    background-color: transparent;
+    border: 2px solid #FF8776;
+}
+
+.btn-eventbrite:hover {
+    color: #fff; 
+    background-color: #FF8776; /* light peach */
+}
+
+.btn-default {
+    border: 1px solid #219ab3;
+    color: #219ab3;
+    background-color: transparent;
+}
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid white;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: white;
+    background-color: #FDE272; /* light yellow */
 }
 
 ul.banner-social-buttons {
@@ -343,7 +527,12 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 30px;
+    /* background-color: #FF7764; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 footer p {
@@ -372,4 +561,47 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+.faq-row {
+    width: 50%;
+    float: left;
+    min-width: 300px;
+    padding: 0px 10px;
+}
+
+.faq-card {
+    font-family: "Proxima Nova","Open Sans",sans-serif;
+    margin-bottom: 20px;
+    background-color: #FFFBF4; /* light yellow */
+    border-radius: 4px;
+    color: #3E3E3E;
+    padding: 40px 30px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.date-emphasis {
+    background-color: #FBB2A9; /* light peach */
+    padding: 5px 10px 5px 10px;
+}
+
+/* disable images from being dragged */
+img {
+    pointer-events:none;
 }
